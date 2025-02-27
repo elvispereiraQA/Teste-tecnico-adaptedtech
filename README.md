@@ -48,7 +48,7 @@ Antes de rodar o projeto, instale as dependências necessárias:
 
 ---
 
-## 🚀 **Instalação e Configuração**  
+## 🚀 **Instalação e Execução**  
 
 1️⃣ **Clone o repositório**  
 ```bash
