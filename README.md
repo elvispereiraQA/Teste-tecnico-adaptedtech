@@ -1,46 +1,98 @@
-# Teste Técnico AdaptedTech
+# **Teste Técnico - AdaptedTech**  
 
-Este projeto tem como objetivo realizar uma automação de testes de interface utilizando o **Cypress**, gerar relatórios detalhados com o **Mocha** e enviar os resultados para um canal do **Discord** através de um **webhook**.
+## 📌 Sobre o Projeto  
+Este projeto foi desenvolvido para testar o site adaptliviu.com.br, ex: funcionalidades da aplicação X, validação de fluxo de login, etc.].  
+Os testes foram automatizados utilizando **Cypress** e os resultados são gerados automaticamente com relatórios e vídeos das execuções.  
 
-A seguir, detalho a estrutura do projeto, como os relatórios são gerados, como o webhook do Discord funciona, e como configurar a pipeline para rodar os testes automaticamente.
+---
 
-## Estrutura do Projeto
+## 📷 **Demonstração (Imagens e Vídeos)**  
 
-A estrutura do projeto está organizada da seguinte forma:
+### 📸 **Screenshots do Projeto**  
+![Exemplo de Execução](https://link-da-imagem.png)  
+> *Descrição da imagem: [Exemplo] Testes rodando com sucesso no terminal.*  
 
+📂 **Caminho no repositório:**  
+As imagens podem ser encontradas na pasta:  
+```
+/documentacao/imagens/
+```
 
+### 🎥 **Vídeos das Execuções**  
+📹 [Veja o vídeo da execução dos testes](https://youtube.com/seu-video)  
 
+📂 **Caminho no repositório:**  
+Os vídeos das execuções podem ser encontrados na pasta:  
+```
+/cypress/videos/
+```
 
+---
 
-## Pré-requisitos
+## 🛠 **Pré-requisitos**  
+Antes de rodar o projeto, instale as dependências necessárias:  
+- [Node.js](https://nodejs.org/) versão 18 ou superior.  
+- [Cypress](https://www.cypress.io/) instalado via npm.  
 
-- [Node.js](https://nodejs.org/) instalado.
-- [Cypress](https://www.cypress.io/) instalado no projeto.
+---
 
-## Instalação
+## 🚀 **Instalação e Configuração**  
 
-Para instalar o projeto, siga estas etapas:
+1️⃣ **Clone o repositório**  
+```bash
+git clone https://github.com/elvispereiraQA/Teste-tecnico-adaptedtech.git
+cd Teste-tecnico-adaptedtech
+```
 
-1. **Clone o repositório**:
-
-   git clone https://github.com/elvispereiraQA/Teste-velocidade-Bringit.git
-   cd Teste-velocidade-Bringit
-
-2. **Instale as dependências**:
-
+2️⃣ **Instale as dependências**  
+```bash
 npm install
+```
 
-3. **Execute os testes**:
+3️⃣ **Execute os testes**  
+- Para rodar em **modo headless** (terminal):  
+  ```bash
+  npx cypress run
+  ```
+- Para rodar no **modo interativo** (interface gráfica):  
+  ```bash
+  npx cypress open
+  ```
 
-// Executa todos os arquivos de teste em modo headless ( Apenas no terminal):
+---
 
-npx cypress run 
+## 📊 **Relatórios de Testes**  
 
-//Para rodar testes específicos em modo headless ( Apenas no terminal), você pode usar o parâmetro --spec:
+Os relatórios dos testes são gerados automaticamente em **formato Mocha**.  
 
-npx cypress run --spec 'cypress/e2e/Velocidade do site/Velocidade site Aceite Cookies.cy.js'
-npx cypress run --spec 'cypress/e2e/Velocidade do site/Velocidade site sem Aceite.cy.js'
+📂 **Caminho no repositório:**  
+```
+/mochareports/
+```
 
-//Para rodar os testes no navegador:
+✅ Para acessar os relatórios localmente, abra o arquivo HTML:  
+```bash
+cd mochareports
+open report.html  # No macOS
+start report.html # No Windows
+```
 
-npx cypress Open 
+---
+
+## 🔄 **Execução na Pipeline (CI/CD)**  
+
+Este projeto está configurado para rodar os testes automaticamente no **GitHub Actions** sempre que houver um **push** para a branch `master`.  
+
+📂 **Pipeline configurado em:**  
+```
+.github/workflows/cypress-ci.yml
+```
+
+
+---
+
+## 📩 **Contato**  
+Se precisar de suporte ou tiver dúvidas sobre o projeto, entre em contato:  
+📧 [Seu e-mail] | 🔗 [LinkedIn](https://linkedin.com/in/seu-perfil)  
+
+---
