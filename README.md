@@ -6,9 +6,11 @@ Este projeto foi desenvolvido para automatizar testes no site adaptliviu.com.br 
 1️⃣ Validação de Formulário
 
 Testa a aceitação de dados válidos e inválidos pelo sistema.
+
 2️⃣ Validação da Página de Soluções
 
 Verifica os principais elementos e funcionalidades dos produtos Liviu Content, Liviu LMS e Liviu Drive.
+
 3️⃣ Validação da Página "Quem Somos"
 
 Garante que as informações essenciais estejam visíveis e corretas.
