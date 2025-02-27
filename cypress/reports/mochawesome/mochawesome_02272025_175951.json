@@ -1,0 +1,132 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-02-27T20:58:47.398Z",
+    "end": "2025-02-27T20:59:51.273Z",
+    "duration": 63875,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 1,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "30c345a9-b6b6-4ac9-babf-72c53120e4e7",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Valida Formulario.cy.js",
+      "file": "cypress\\e2e\\Valida Formulario.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "dc22ecc7-610a-47ec-88a1-48e83c15e25a",
+          "title": "Valida Formulario",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": " Enviando dados corretamente",
+              "fullTitle": "Valida Formulario  Enviando dados corretamente",
+              "timedOut": null,
+              "duration": 60363,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#form-field-name').type('Teste');\ncy.get('#form-field-email').type('teste@teste.com');\ncy.get('#form-field-message').type('Empresa teste');\ncy.get('#form-field-field_f4f7f90');\ncy.get('#form-field-field_195975d').type('48999999999');\ncy.get('#form-field-field_98bbe7d').type('Teste texto');\ncy.get('.elementor-field-type-submit > .elementor-button > .elementor-button-content-wrapper > .elementor-button-text').click({\n  force: true\n});\ncy.get('.elementor-message').contains('Inscrição realizada com sucesso! Em breve nosso time entrará em contato.').should('be.visible');",
+              "err": {
+                "message": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Valida Formulario`",
+                "estack": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Valida Formulario`\n    at timedOutWaitingForPageLoad (https://adaptliviu.com.br/__cypress/runner/cypress_runner.js:131363:64)\n    at <unknown> (https://adaptliviu.com.br/__cypress/runner/cypress_runner.js:132357:16)\n    at tryCatcher (https://adaptliviu.com.br/__cypress/runner/cypress_runner.js:1777:23)\n    at <unknown> (https://adaptliviu.com.br/__cypress/runner/cypress_runner.js:4156:41)\n    at tryCatcher (https://adaptliviu.com.br/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (https://adaptliviu.com.br/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (https://adaptliviu.com.br/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (https://adaptliviu.com.br/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (https://adaptliviu.com.br/__cypress/runner/cypress_runner.js:1667:18)\n    at _drainQueueStep (https://adaptliviu.com.br/__cypress/runner/cypress_runner.js:2377:12)\n    at _drainQueue (https://adaptliviu.com.br/__cypress/runner/cypress_runner.js:2370:9)\n    at Async._drainQueues (https://adaptliviu.com.br/__cypress/runner/cypress_runner.js:2386:5)\n    at Async.drainQueues (https://adaptliviu.com.br/__cypress/runner/cypress_runner.js:2256:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://teste-tecnico-adaptedtech/./cypress/e2e/Valida Formulario.cy.js:4:9)",
+                "diff": null
+              },
+              "uuid": "0622518a-ad0d-4633-ac5e-e8bac9da9e39",
+              "parentUUID": "dc22ecc7-610a-47ec-88a1-48e83c15e25a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": " Enviando dados Incorretos",
+              "fullTitle": "Valida Formulario  Enviando dados Incorretos",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#form-field-name').type('123????4');\ncy.get('#form-field-email').type('teste@teste.com');\ncy.get('#form-field-message').type('????');\ncy.get('#form-field-field_f4f7f90');\ncy.get('#form-field-field_195975d').type('texto???');\ncy.get('#form-field-field_98bbe7d').type('&&&***¨*%¨%¨%¨%');\ncy.get('.elementor-field-type-submit > .elementor-button > .elementor-button-content-wrapper > .elementor-button-text').click({\n  force: true\n});\ncy.get('.elementor-message').contains('Inscrição realizada com sucesso! Em breve nosso time entrará em contato.').should('be.visible'); // Aqui deveria Falhar com uma fraes de dados invalidos",
+              "err": {},
+              "uuid": "94ba66a0-a41a-4d76-b94f-14f49134ff04",
+              "parentUUID": "dc22ecc7-610a-47ec-88a1-48e83c15e25a",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "0622518a-ad0d-4633-ac5e-e8bac9da9e39"
+          ],
+          "pending": [],
+          "skipped": [
+            "94ba66a0-a41a-4d76-b94f-14f49134ff04"
+          ],
+          "duration": 60363,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss",
+        "embeddedScreenshots": true,
+        "inlineAssets": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

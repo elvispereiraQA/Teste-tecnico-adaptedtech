@@ -1,0 +1,108 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-02-27T21:24:14.896Z",
+    "end": "2025-02-27T21:24:30.676Z",
+    "duration": 15780,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "37776041-a283-4f61-bead-e887dccbe975",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Valida quem somos.cy.js",
+      "file": "cypress\\e2e\\Valida quem somos.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e46fadbc-14ec-40c5-8434-d0205050abf6",
+          "title": "Pagina Quem Somos",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Valida Informações principais",
+              "fullTitle": "Pagina Quem Somos Valida Informações principais",
+              "timedOut": null,
+              "duration": 12917,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('Quem somos').click();\ncy.contains('Nós criamos ambientes de treinamento e estudos online para desenvolver pessoas').should('be.visible'); // Valida frase inicial do site\ncy.contains('Nossa missão é ser a solução mais confiável para nossos clientes e parceiros.').should('be.visible'); // Valida frase missão\ncy.contains('Especialistas em inovações educacionais').should('be.visible'); // Valida frase Especialidades",
+              "err": {},
+              "uuid": "e3d1b880-dc81-483a-9eb3-0b88e672076f",
+              "parentUUID": "e46fadbc-14ec-40c5-8434-d0205050abf6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e3d1b880-dc81-483a-9eb3-0b88e672076f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 12917,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss",
+        "embeddedScreenshots": true,
+        "inlineAssets": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
