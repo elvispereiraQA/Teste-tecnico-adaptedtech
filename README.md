@@ -16,6 +16,7 @@ Verifica os principais elementos e funcionalidades dos produtos Liviu Content, L
 Garante que as informações essenciais estejam visíveis e corretas.
 
 ✅ Automação e Relatórios
+
 Os testes são executados automaticamente, gerando report para canal do discord e relatórios detalhados, vídeos das execuções, garantindo maior visibilidade dos resultados.  
 
 ---
