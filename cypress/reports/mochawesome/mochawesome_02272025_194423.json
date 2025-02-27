@@ -1,0 +1,146 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-02-27T22:44:04.067Z",
+    "end": "2025-02-27T22:44:23.092Z",
+    "duration": 19025,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3cd2467c-9606-4a54-941e-3a68f5fb68c1",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Valida Pagina de soluções.cy.js",
+      "file": "cypress\\e2e\\Valida Pagina de soluções.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e6aa5e31-f8d1-42fe-9ec8-2bf73408d759",
+          "title": "Valida a página Soluções",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": " Liviu Content",
+              "fullTitle": "Valida a página Soluções  Liviu Content",
+              "timedOut": null,
+              "duration": 8014,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://adaptliviu.com.br/liviu-content');\n// Valida título da página\ncy.contains('Tecnologia de ponta em experiências educacionais personalizadas').should('be.visible');\n// Valida botões principais\ncy.contains('Solicite uma desmonstração').should('be.visible'); // Nome incorreto\ncy.contains('Fale com a nossa equipe').should('be.visible');\n// Valida bloco de assinaturas - Equipes\ncy.contains('Crie materiais didáticos mais rápido').should('be.visible');\n// Planos Equipes\ncy.contains('R$ 1.999 por mês').should('be.visible'); // Básico\ncy.contains('R$ 2.667 por mês').should('be.visible'); // Plus\ncy.contains('R$ 2.999 por mês').should('be.visible'); // Pro\ncy.wait(1000);\n// Valida bloco de assinaturas - Pessoal\ncy.get('#e-n-tab-title-1275273432 > .e-n-tab-title-text').click({\n  force: true\n});\n// Planos Pessoal\ncy.contains('Gratuito').should('be.visible'); // Plano Gratuito\ncy.contains('R$ 99,00 por mês').should('be.visible'); // Plano Pessoal\ncy.contains('Plano customizado').should('be.visible'); // Plano Customizado",
+              "err": {},
+              "uuid": "4d03b13d-aed0-4024-b297-c844a6d1d054",
+              "parentUUID": "e6aa5e31-f8d1-42fe-9ec8-2bf73408d759",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": " Liviu LMS",
+              "fullTitle": "Valida a página Soluções  Liviu LMS",
+              "timedOut": null,
+              "duration": 4338,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://adaptliviu.com.br/liviu-lms/');\n// Valida título da página\ncy.contains('Tenha seu próprio LMS personalizado').should('be.visible');\n// Valida botões principais\ncy.contains('Fale com a nossa equipe').should('be.visible');\n// Valida bloco de Planos\n// Básico\ncy.get('.elementor-element-25d20960').then($el => {\n  expect($el.text()).to.include('Básico');\n  expect($el.text()).to.include('150 usuários');\n});\n// Plus\ncy.get('.elementor-element-af062c2').then($el => {\n  expect($el.text()).to.include('Plus');\n  expect($el.text()).to.include('500 usuários');\n});\n// Pro\ncy.get('.elementor-element-50eaea53').then($el => {\n  expect($el.text()).to.include('Pro');\n  expect($el.text()).to.include('1000 usuários');\n});",
+              "err": {},
+              "uuid": "40bd734f-5aff-4981-a613-56c0f280fd1f",
+              "parentUUID": "e6aa5e31-f8d1-42fe-9ec8-2bf73408d759",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": " Liviu Drive",
+              "fullTitle": "Valida a página Soluções  Liviu Drive",
+              "timedOut": null,
+              "duration": 2120,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://adaptliviu.com.br/liviu-drive/');\n// Valida título da página\ncy.contains('Organize, armazene e acesse os conteúdos dos seus cursos de forma eficiente').should('be.visible');\n// Valida botões principais\ncy.contains('Fale com a nossa equipe').should('be.visible');",
+              "err": {},
+              "uuid": "055fe35c-dc99-4a8a-9d78-ea70bffc563a",
+              "parentUUID": "e6aa5e31-f8d1-42fe-9ec8-2bf73408d759",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4d03b13d-aed0-4024-b297-c844a6d1d054",
+            "40bd734f-5aff-4981-a613-56c0f280fd1f",
+            "055fe35c-dc99-4a8a-9d78-ea70bffc563a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 14472,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss",
+        "embeddedScreenshots": true,
+        "inlineAssets": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

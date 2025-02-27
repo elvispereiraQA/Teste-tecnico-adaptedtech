@@ -9,22 +9,19 @@ Os testes foram automatizados utilizando **Cypress** e os resultados são gerado
 ## 📷 **Demonstração (Imagens e Vídeos)**  
 
 ### 📸 **Screenshots do Projeto**  
-![Exemplo de Execução](https://link-da-imagem.png)  
-> *Descrição da imagem: [Exemplo] Testes rodando com sucesso no terminal.*  
 
 📂 **Caminho no repositório:**  
 As imagens podem ser encontradas na pasta:  
 ```
-/documentacao/imagens/
+https://github.com/elvispereiraQA/Teste-tecnico-adaptedtech/tree/master/Imagens
 ```
 
 ### 🎥 **Vídeos das Execuções**  
-📹 [Veja o vídeo da execução dos testes](https://youtube.com/seu-video)  
 
 📂 **Caminho no repositório:**  
 Os vídeos das execuções podem ser encontrados na pasta:  
 ```
-/cypress/videos/
+https://github.com/elvispereiraQA/Teste-tecnico-adaptedtech/tree/master/cypress/videos
 ```
 
 ---
@@ -83,7 +80,7 @@ start report.html # No Windows
 
 ## 🔄 **Execução na Pipeline (CI/CD)**  
 
-Este projeto está configurado para rodar os testes automaticamente no **GitHub Actions** sempre que houver um **push** para a branch `master`.  
+Este projeto está configurado para rodar os testes automaticamente no **GitHub Actions** sempre que houver um **push** para a branch `master` OU voce pode execupar manualmente acessando https://github.com/elvispereiraQA/Teste-tecnico-adaptedtech/actions.  
 
 📂 **Pipeline configurado em:**  
 ```
@@ -95,6 +92,6 @@ Este projeto está configurado para rodar os testes automaticamente no **GitHub 
 
 ## 📩 **Contato**  
 Se precisar de suporte ou tiver dúvidas sobre o projeto, entre em contato:  
-📧 [Seu e-mail] | 🔗 [LinkedIn](https://linkedin.com/in/seu-perfil)  
+📧 [elvis_ar15@hotmail.com] | 🔗 [LinkedIn](https://linkedin.com/in/elvispereira)  
 
 ---
