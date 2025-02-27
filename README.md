@@ -57,12 +57,23 @@ npm install
   ```bash
   npx cypress open
   ```
+  ![Cypress com interface](https://github.com/elvispereiraQA/Teste-tecnico-adaptedtech/blob/master/Imagens/Cypress%20com%20interface.jpg?raw=true)
 
 ---
 
-## 📊 **Relatórios de Testes**  
+## 📊 **Relatórios de Testes e Report**  
 
-Os relatórios dos testes são gerados automaticamente em **formato Mocha**.  
+✅  **Test Results Notification (Discord):**  
+
+ Os resultados dos testes são enviados para o canal do discord, a configuração é feita no arquivo 'cypress.config.js'.
+
+   ![Resultado webhook discord](https://github.com/elvispereiraQA/Teste-tecnico-adaptedtech/blob/master/Imagens/Resultado%20webhook%20discord.jpg?raw=true)
+
+
+ Os  relatórios dos testes são gerados automaticamente em **formato Mocha**.  
+
+   ![Relatorio simples Mocha](https://github.com/elvispereiraQA/Teste-tecnico-adaptedtech/blob/master/Imagens/Relatorio%20simples%20Mocha.jpg?raw=true)
+
 
 📂 **Caminho no repositório:**  
 ```
@@ -80,7 +91,7 @@ start report.html # No Windows
 
 ## 🔄 **Execução na Pipeline (CI/CD)**  
 
-Este projeto está configurado para rodar os testes automaticamente no **GitHub Actions** sempre que houver um **push** para a branch `master` OU voce pode execupar manualmente acessando https://github.com/elvispereiraQA/Teste-tecnico-adaptedtech/actions.  
+Este projeto está configurado para rodar os testes automaticamente no **GitHub Actions** sempre que houver um **push** para a branch `master` OU voce pode executar manualmente acessando https://github.com/elvispereiraQA/Teste-tecnico-adaptedtech/actions.  
 
 📂 **Pipeline configurado em:**  
 ```
