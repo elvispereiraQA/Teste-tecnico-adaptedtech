@@ -1,7 +1,14 @@
 # **Teste Técnico - AdaptedTech**  
 
 ## 📌 Sobre o Projeto  
-Este projeto foi desenvolvido para testar o site adaptliviu.com.br, ex: funcionalidades da aplicação X, validação de fluxo de login, etc.].  
+Este projeto foi desenvolvido para testar o site adaptliviu.com.br, divididos em 3 arquivos de testes na pasta cypress> e2e:
+
+1- Validação de formulario: Verificando se o sistema aceita dados corretos e incorretos
+    
+2- Validação da pagina de soluções: verificando os principais pontos dos produtos Liviu Content, Liviu LMS e Liviu Drive
+
+3- Validação da pagina Quem Somos: Verificando se as principais informações estão visiveis.
+
 Os testes foram automatizados utilizando **Cypress** e os resultados são gerados automaticamente com relatórios e vídeos das execuções.  
 
 ---
