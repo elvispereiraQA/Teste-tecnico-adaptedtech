@@ -54,6 +54,8 @@ npm install
   ```bash
   npx cypress run
   ```
+  ![Cypress modo headless](https://github.com/elvispereiraQA/Teste-tecnico-adaptedtech/blob/master/Imagens/Cypress%20modo%20headless.jpg?raw=true)
+
 - Para rodar no **modo interativo** (interface gráfica):  
   ```bash
   npx cypress open
